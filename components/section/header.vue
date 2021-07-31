@@ -1,11 +1,10 @@
 <template>
-  <div class="grid grid-cols-2 h-screen w-full header-section">
-    <!-- <div class="bg-overlay" /> -->
-    <div class="col-span-1 p-16 flex items-center">
+  <div class="grid grid-cols-2 h-screen w-full header-section desktop:bg-right bg-cover mobile:bg-center mobile:text-center">
+    <div class="col-span-1 p-16 flex items-center mobile:col-span-2">
       <div>
-        <img src="/logo.png" alt="logo" class="w-96">
+        <img src="/logo.png" alt="logo" class="w-96 mb-4">
 
-        <div class="text-7xl font-semibold text-red-main">
+        <div class="text-7xl font-semibold text-red-main mb-4 mobile:text-3xl">
           BANGUN ESTUSAE PROPERTINDO
         </div>
         <div>
@@ -13,20 +12,12 @@
         </div>
       </div>
     </div>
-    <!-- <div class="col-span-1 flex items-center">
-      <img src="/header-img.png" alt="header" class="object-cover">
-    </div> -->
   </div>
 </template>
 
 <style lang="scss" scoped>
 .header-section {
-  background: url('/header-img.png');
-  @apply bg-fixed bg-cover bg-no-repeat bg-right relative;
-}
-.bg-overlay {
-  background-color: #f5f7fa;
-  opacity: 0.97;
-  @apply absolute left-0 top-0 h-full w-full;
+  background-image: url('/header-img.png');
+  @apply bg-fixed bg-no-repeat;
 }
 </style>

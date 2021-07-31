@@ -1,10 +1,10 @@
 <template>
-  <div class="section-footer p-16 bg-gray-200">
-    <div class="container mx-auto">
+  <div class="section-footer p-16 bg-gray-200 mobile:p-8">
+    <div class="container mx-auto mobile:text-center">
       <img src="/logo.png" alt="logo" class="w-48 mb-4">
       <div class="grid grid-cols-3">
-        <div>
-          <div class="mb-4">
+        <div class="desktop:col-span-1 mobile:col-span-3 mobile:mb-4">
+          <div class="mb-4 mobile:text-left">
             <div class="font-semibold text-lg mb-4">
               Kontak
             </div>
@@ -16,7 +16,6 @@
 
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.756943490657!2d107.49548551477018!3d-6.425266195351272!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e696d1b21015515%3A0xe32961aaf541bd49!2sPerumahan%20Estusae%20Alam%20Indah%20Cikopo%20Purwakarta!5e0!3m2!1sen!2sid!4v1627722914539!5m2!1sen!2sid"
-            width="400"
             height="200"
             style="border:0;"
             allowfullscreen=""
@@ -24,9 +23,10 @@
           />
         </div>
 
-        <div />
+        <div class="mobile:hidden" />
+        <hr class="desktop:hidden my-4 border-gray-400 col-span-3 border-2">
 
-        <div class="medsoc-wrapper">
+        <div class="desktop:col-span-1 mobile:col-span-3">
           <div class="font-semibold text-lg mb-4">
             Ikuti Kami:
           </div>
